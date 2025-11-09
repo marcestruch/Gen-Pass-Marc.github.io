@@ -1,0 +1,159 @@
+@charset "utf-8";
+@media(max-width: 450px){
+    main{
+        padding: 20px;
+        border-radius: 15px;
+    }
+    
+    h1{
+        font-size: 1.8em;
+    }
+
+    .contra{
+        font-size: 0.9em;
+    }
+
+    #generar, #copiar{
+        font-size: 0.9em;
+        padding: 10px;
+    }
+}
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Poppins:wght@400;600&display=swap');
+
+*{
+    padding: 0; margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #121212, #1f1f1f);
+    color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+header{
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+h1{
+    font-size: 2.2em;
+    font-weight: 600;
+    color: #0aff84;
+    text-shadow: 0 0 15px #0aff84;
+}
+
+main{
+    width: 100%;
+    max-width: 400px;
+    background-color: #222;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+}
+
+#sal-contra{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.contra{
+    flex: 1;
+    padding: 12px;
+    font-size: 1em;
+    border-radius: 10px 0 0 10px;
+    border: none;
+    font-family: 'Fira Code', monospace;
+    background-color: #333;
+    color: #f5f5f5;
+    text-align: center;
+    transition: 0.2s;
+}
+
+.contra::placeholder{
+    color: #aaa;
+}
+
+.contra:focus{
+    outline: none;
+    box-shadow: 0 0 10px #0aff84;
+}
+
+#copiar{
+    padding: 12px;
+    background-color: #0a84ff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 0 10px 10px 0;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+#copiar:hover{
+    background-color: #005bbb;
+    box-shadow: 0 0 10px #0a84ff;
+}
+
+form p{
+    margin-bottom: 15px;
+}
+
+input[type="number"]{
+    width: 60px;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    text-align: center;
+    font-weight: 500;
+    background-color: #333;
+    color: #f5f5f5;
+}
+
+input[type="number"]:focus {
+    outline: none;
+    box-shadow: 0 0 8px #0aff84;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+label {
+    font-size: 0.95em;
+}
+
+#generar {
+    width: 100%;
+    padding: 12px;
+    background-color: #0aff84;
+    border: none;
+    border-radius: 10px;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#generar:hover {
+    background-color: #00bb5e;
+    box-shadow: 0 0 10px #0aff84;
+}
+
+footer{
+    margin-top: 30px;
+    text-align: center;
+}
+
+footer i{
+    font-size: 0.9em;
+    color: #aaa;
+}
